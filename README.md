@@ -3,9 +3,7 @@
 ### Grupo A
 
 ### Integrantes:
-Jorge Luiz da Silva - conta github<br>
-Fulano de Tal - conta github<br>
-Beltrano de Tal - conta github<br>
+- Filipe Milaneze [@phillCD](https://github.com/phillCD)
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
