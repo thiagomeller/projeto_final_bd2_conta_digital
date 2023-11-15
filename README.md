@@ -4,6 +4,11 @@
 
 ### Integrantes:
 - Filipe Milaneze [@phillCD](https://github.com/phillCD)
+- Iuri de Lima Marques [@iurilimamarques](https://github.com/iurilimamarques)
+- Thiago Meller [@thiagomeller](https://github.com/thiagomeller)
+- Janaina
+- Monique
+- Gabriel
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
