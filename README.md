@@ -7,7 +7,7 @@
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
-Arquivo fonte: <code>https://dbdiagram.io/d/C7BankProject-65540e127d8bbd6465329b81</code><br>
+Arquivo fonte: <code>https://dbdiagram.io/d/Copy-of-C7BankProject-655507497d8bbd6465437d6e</code><br>
 <img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/0927ce6a-b8ac-40b9-9052-cc9841e7fe20" />
   
 ### Dicionário de Dados:
