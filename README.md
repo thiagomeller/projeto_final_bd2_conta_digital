@@ -7,8 +7,8 @@
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
-Arquivo fonte: <code>link pro arquivo</code><br>
-<code>Imagem</code>
+Arquivo fonte: <code>https://dbdiagram.io/d/C7BankProject-65540e127d8bbd6465329b81</code><br>
+<img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/0927ce6a-b8ac-40b9-9052-cc9841e7fe20" />
   
 ### Dicionário de Dados:
 <code>Excel ou tabela do Github (markdown)</code>
