@@ -7,7 +7,7 @@
 - Iuri de Lima Marques [@iurilimamarques](https://github.com/iurilimamarques)
 - Thiago Meller [@thiagomeller](https://github.com/thiagomeller)
 - Janaina [@janainacarlos](https://github.com/janainacarlos)
-- Monique
+- Monique [@moniquepavan](https://github.com/moniquepavan)
 - Gabriel
 - Ana
 
