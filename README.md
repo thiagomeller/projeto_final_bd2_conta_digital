@@ -13,8 +13,8 @@
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
-Arquivo fonte: <code>https://dbdiagram.io/d/Copy-of-C7BankProject-655507497d8bbd6465437d6e</code><br>
-<img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/26387926/3096ee88-664e-49dd-b023-113f3e7bbcb7" />
+Arquivo fonte: <code>https://dbdiagram.io/d/Copy-of-Copy-of-C7BankProject-655d41863be149578777da7a</code><br>
+<img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/8bfc40f1-8849-420d-ae70-2c25f4084348" />
 
 ### Dicionário de Dados:
 <code>Excel ou tabela do Github (markdown)</code>
