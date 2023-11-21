@@ -9,7 +9,7 @@
 - Janaina [@janainacarlos](https://github.com/janainacarlos)
 - Monique [@moniquepavan](https://github.com/moniquepavan)
 - Gabriel [@gabrieldorodrigues](https://github.com/gabrieldorodrigues)
-- Ana
+- Ana [@Santinoni15](https://github.com/Santinoni15)
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
