@@ -8,7 +8,7 @@
 - Thiago Meller [@thiagomeller](https://github.com/thiagomeller)
 - Janaina [@janainacarlos](https://github.com/janainacarlos)
 - Monique [@moniquepavan](https://github.com/moniquepavan)
-- Gabriel
+- Gabriel [@gabrieldorodrigues](https://github.com/gabrieldorodrigues)
 - Ana
 
 ### Modelo Físico:
