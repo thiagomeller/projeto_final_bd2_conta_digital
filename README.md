@@ -9,6 +9,7 @@
 - Janaina [@janainacarlos](https://github.com/janainacarlos)
 - Monique
 - Gabriel
+- Ana
 
 ### Modelo Físico:
 Utilizado https://dbdiagram.io/<br>
