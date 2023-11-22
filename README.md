@@ -1,6 +1,6 @@
-## Projeto Sistema de <...>
+## Projeto Sistema de Conta Digital
 
-### Grupo A
+### Grupo D
 
 ### Integrantes:
 - Filipe Milaneze [@phillCD](https://github.com/phillCD)
