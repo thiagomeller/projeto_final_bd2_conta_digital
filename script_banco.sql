@@ -3,13 +3,9 @@ USE bancodigitaldb;
 
 CREATE TABLE [person] (
     id INT NOT NULL IDENTITY(1, 1),
-    rg VARCHAR(20) NOT NULL,
-    cpf_cnpj VARCHAR(14) NOT NULL,
-    type CHAR(1) NOT NULL,
+    cnpj VARCHAR(14) NOT NULL,
     PRIMARY KEY (id),
-    CONSTRAINT chk_type CHECK (type IN ('F', 'J'))
 );
-/* F: FISICA, J: JURIDICA */
 GO;
 
 CREATE TABLE [user] (
@@ -24,13 +20,14 @@ GO
 
 CREATE TABLE [transaction] (
     id INT NOT NULL IDENTITY(1, 1),
-    sender_id INT NOT NULL,
-    receiver_id INT NOT NULL,
-    value numeric(19, 2) NOT NULL,
+    user_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL,
+	[type] varchar(20) NOT NULL,
+	[description] varchar(50) NOT NULL,
+	[value] value numeric(19, 2) NOT NULL,
+    balance_change_type char(1) NOT NULL,
     PRIMARY KEY (id),
-    CONSTRAINT fk_transaction_user_sender FOREIGN KEY (sender_id) REFERENCES [user](id),
-    CONSTRAINT fk_transaction_user_receiver FOREIGN KEY (receiver_id) REFERENCES [user](id)
+    CONSTRAINT fk_transaction_user FOREIGN KEY (user_id) REFERENCES [user](id),
 );
 GO
 
@@ -94,6 +91,5 @@ CREATE TABLE [actions_log] (
     table_name VARCHAR(100) NOT NULL,
     description VARCHAR(150) NOT NULL,
     PRIMARY KEY (id),
-    CONSTRAINT fk_actions_log_user FOREIGN KEY (user_id) REFERENCES [user](id)
 );
 GO
