@@ -31,5 +31,5 @@ Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 <code>1 arquivo SQL por objeto</code>
   
 ### Código do sistema:
-Linguagem de Programação C# .NET.<br>
+Linguagem de Programação Java com SpringBoot<br>
 <code>código fonte da aplicação</code>
