@@ -4,7 +4,8 @@ USE bancodigitaldb;
 CREATE TABLE [person] (
     id INT NOT NULL IDENTITY(1, 1),
     cnpj VARCHAR(14) NOT NULL,
-    PRIMARY KEY (id),
+    institution_name VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
 );
 GO;
 
@@ -27,7 +28,7 @@ CREATE TABLE [transaction] (
 	[value] numeric(19, 2) NOT NULL,
     balance_change_type char(1) NOT NULL,
     PRIMARY KEY (id),
-    CONSTRAINT fk_transaction_user FOREIGN KEY (user_id) REFERENCES [user](id),
+    CONSTRAINT fk_transaction_user FOREIGN KEY (user_id) REFERENCES [user](id)
 );
 GO
 
@@ -90,6 +91,6 @@ CREATE TABLE [actions_log] (
     action_date DATETIME NOT NULL,
     table_name VARCHAR(100) NOT NULL,
     description VARCHAR(150) NOT NULL,
-    PRIMARY KEY (id),
+    PRIMARY KEY (id)
 );
 GO
