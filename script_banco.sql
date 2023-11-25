@@ -24,7 +24,7 @@ CREATE TABLE [transaction] (
     created_at TIMESTAMP NOT NULL,
 	[type] varchar(20) NOT NULL,
 	[description] varchar(50) NOT NULL,
-	[value] value numeric(19, 2) NOT NULL,
+	[value] numeric(19, 2) NOT NULL,
     balance_change_type char(1) NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT fk_transaction_user FOREIGN KEY (user_id) REFERENCES [user](id),
