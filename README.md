@@ -17,7 +17,7 @@ Arquivo fonte: <code>https://dbdiagram.io/d/Copy-of-Copy-of-C7BankProject-655d41
 <img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/8bfc40f1-8849-420d-ae70-2c25f4084348" />
 
 ### Dicionário de Dados:
-<code>Excel ou tabela do Github (markdown)</code>
+https://docs.google.com/spreadsheets/d/1jE8zE5gjPB6n3X6Wvn8nbhCWUKokrW3Oqiy8snYbJhU/edit?usp=sharing
 
 ### Scripts DDL Criação do Database:
 Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
