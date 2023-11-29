@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "bank_account")
+@Table(name = "[bank_account]", schema = "dbo")
 public class BankAccount {
 
     @Id

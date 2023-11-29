@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "card")
+@Table(name = "[card]", schema = "dbo")
 public class Card {
 
     @Id

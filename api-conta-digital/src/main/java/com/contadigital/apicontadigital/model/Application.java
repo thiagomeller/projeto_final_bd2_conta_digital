@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "application")
+@Table(name = "[application]", schema = "dbo")
 public class Application {
 
     @Id
