@@ -33,3 +33,6 @@ Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 ### Código do sistema:
 Linguagem de Programação Java com SpringBoot<br>
 <code>código fonte da aplicação</code>
+
+### Relatório Final
+O relatório final está disponível no arquivo [PDF Conta Digital](https://docs.google.com/document/d/1fqPJ_jK8oAi5Old4UvQNoTG6srlBxPFVQA4wORVLhqI/edit).
