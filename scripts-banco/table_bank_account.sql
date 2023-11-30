@@ -6,4 +6,3 @@ CREATE TABLE [bank_account] (
     PRIMARY KEY (id),
     CONSTRAINT fk_bank_account_user FOREIGN KEY (user_id) REFERENCES [user](id)
 );
-GO

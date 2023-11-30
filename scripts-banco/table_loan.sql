@@ -9,4 +9,3 @@ CREATE TABLE [loan] (
     PRIMARY KEY (id),
     CONSTRAINT fk_loan_user FOREIGN KEY (user_id) REFERENCES [user](id)
 );
-GO
