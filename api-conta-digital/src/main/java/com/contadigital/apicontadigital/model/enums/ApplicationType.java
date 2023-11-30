@@ -2,8 +2,8 @@ package com.contadigital.apicontadigital.model.enums;
 
 public enum ApplicationType {
 
-    STOCK("S"),
-    NATIONAL_TREASURY("T");
+    S("STOCK"),
+    T("NATIONAL_TREASURY");
 
     private String description;
 

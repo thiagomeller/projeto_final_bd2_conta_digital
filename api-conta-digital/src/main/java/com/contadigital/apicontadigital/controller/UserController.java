@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.ValidationException;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/user")
@@ -26,9 +28,12 @@ public class UserController {
 
     @PostMapping(path = "create-user")
     public ResponseEntity createUser(@RequestBody UserDto userDto) {
-        Person person = personRepository.getOne(userDto.getPersonId());
+        Optional<Person> personOptional = personRepository.findById(userDto.getPersonId());
+        if (personOptional.isEmpty()) {
+            throw new ValidationException("Person not found");
+        }
         User newUser = new User();
-        newUser.setPerson(person);
+        newUser.setPerson(personOptional.get());
         newUser.setUsername(userDto.getUsername());
         newUser.setCreatedAt(LocalDateTime.now());
         userRepository.save(newUser);
