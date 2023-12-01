@@ -2,8 +2,8 @@ package com.contadigital.apicontadigital.model.enums;
 
 public enum CardType {
 
-    CREDIT("C"),
-    DEBIT("D");
+    C("CREDIT"),
+    D("DEBIT");
 
     private String description;
 

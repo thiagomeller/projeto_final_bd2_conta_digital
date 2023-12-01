@@ -17,7 +17,7 @@ Arquivo fonte: <code>https://dbdiagram.io/d/Copy-of-Copy-of-C7BankProject-655d41
 <img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/8bfc40f1-8849-420d-ae70-2c25f4084348" />
 
 ### Dicionário de Dados:
-<code>Excel ou tabela do Github (markdown)</code>
+As informações sobre as tabelas e índices foram documentados na planilha [Dicionário de dados](https://docs.google.com/spreadsheets/d/1jE8zE5gjPB6n3X6Wvn8nbhCWUKokrW3Oqiy8snYbJhU/edit?usp=sharing).
 
 ### Scripts DDL Criação do Database:
 Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
@@ -33,3 +33,6 @@ Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 ### Código do sistema:
 Linguagem de Programação Java com SpringBoot<br>
 <code>código fonte da aplicação</code>
+
+### Relatório Final
+O relatório final está disponível no arquivo [PDF Conta Digital](https://docs.google.com/document/d/1fqPJ_jK8oAi5Old4UvQNoTG6srlBxPFVQA4wORVLhqI/edit).
