@@ -17,7 +17,7 @@ create index idx_balance on bank_account (balance) include (user_id)</code>
 <img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/f4729054-b34f-4776-b451-ea03945576da"/>
 
 
-<h3>2- Quais são os nomes das instituições com mais de um cartão de crédito cadastrado que fizeram transações nos últimos 30 dias?</h3>
+<h3>2- Quais são os ids das instituições, datas, causas, valores e tipos das transações dos últimos 30 dias?</h3>
 <code>select user_id, created_at, description, value, balance_change_type from [transaction] where created_at between DATEADD(day, -30, getdate()) and GETDATE()</code>
 
 <h4>Índices pergunta 1</h4>
