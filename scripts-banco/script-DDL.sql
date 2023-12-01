@@ -1,28 +1,26 @@
-CREATE DATABASE bancodigitaldb;
-USE bancodigitaldb;
+CREATE DATABASE contadigitaldb
+use contadigitaldb
 
 CREATE TABLE [person] (
     id INT NOT NULL IDENTITY(1, 1),
-    cnpj VARCHAR(14) NOT NULL,
+    cnpj VARCHAR(18) NOT NULL,
     institution_name VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
-GO;
 
 CREATE TABLE [user] (
     id INT NOT NULL IDENTITY(1, 1),
     person_id INT NOT NULL,
-    username VARCHAR(40) NOT NULL,
+    username VARCHAR(40) UNIQUE NOT NULL,
     created_at TIMESTAMP NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT fk_user_person FOREIGN KEY (person_id) REFERENCES [person](id)
 );
-GO
 
 CREATE TABLE [transaction] (
     id INT NOT NULL IDENTITY(1, 1),
     user_id INT NOT NULL,
-    created_at TIMESTAMP NOT NULL,
+    created_at DATETIME NOT NULL,
 	[type] varchar(20) NOT NULL,
 	[description] varchar(50) NOT NULL,
 	[value] numeric(19, 2) NOT NULL,
@@ -30,15 +28,14 @@ CREATE TABLE [transaction] (
     PRIMARY KEY (id),
     CONSTRAINT fk_transaction_user FOREIGN KEY (user_id) REFERENCES [user](id)
 );
-GO
 
 CREATE TABLE [card] (
     id INT NOT NULL IDENTITY (1, 1),
     user_id INT NOT NULL,
-    card_number INT NOT NULL,
+    card_number VARCHAR(16) NOT NULL,
     card_holder VARCHAR(60) NOT NULL,
     card_validation_date DATE NOT NULL,
-    card_cvv TINYINT NOT NULL,
+    card_cvv SMALLINT NOT NULL,
     card_member_since DATE NOT NULL,
     card_type CHAR(1) NOT NULL,
     PRIMARY KEY (id),
@@ -64,7 +61,7 @@ CREATE TABLE [application] (
     application_type CHAR(1) NOT NULL,
     value NUMERIC(19, 2) NOT NULL,
     interest_rate NUMERIC(3, 2) NOT NULL,
-    created_at TIMESTAMP NOT NULL,
+    created_at DATETIME NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT fk_application_user FOREIGN KEY (user_id) REFERENCES [user](id),
     CONSTRAINT chk_application_type CHECK (application_type IN ('S', 'T'))
@@ -90,7 +87,6 @@ CREATE TABLE [actions_log] (
     user_id INT NOT NULL,
     action_date DATETIME NOT NULL,
     table_name VARCHAR(100) NOT NULL,
-    description VARCHAR(150) NOT NULL,
+    description VARCHAR(max) NOT NULL,
     PRIMARY KEY (id)
 );
-GO

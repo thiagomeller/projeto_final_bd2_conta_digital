@@ -1,7 +1,7 @@
-Quais são os CPNJs dos usuários que fizram emprestimo mesmo tendo saldo negativo?
+Quais são os CPNJs dos usuários que fizeram emprestimo mesmo tendo saldo negativo?
 
-Quais são os nomes das instituições com mais de um cartão de crédito cadastrado que fizeram transações nos últimos 30 dias?
+Quais são os ids das instituições, datas, causas, valores e tipos das transações dos últimos 30 dias?
 
 Quais os nomes das empresas que aplicaram nos fundos com mais rendimento desse ano (2023)?
 
-Qual o usuário que teve o maior número de depósitos realizados para a sua conta e qual é o total desses depositos?
+Qual o usuário que teve o maior número de créditos realizados para a sua conta e qual é o total desses depositos?
