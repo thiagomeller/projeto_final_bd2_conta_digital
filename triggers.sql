@@ -1,4 +1,4 @@
---Trigger para mudança de saldo
+--Trigger para mudanÃ§a de saldo
 create trigger ti_transaction on [transaction] for insert as 
 begin
 	if ROWCOUNT_BIG() = 0
@@ -24,7 +24,7 @@ begin
 	from bank_account
 	where @user_id = bank_account.user_id
 
-	if @type like 'Cartão de Crédito' 
+	if @type like 'CartÃ£o de CrÃ©dito' 
 		begin
 			if @value <= @credit_limit
 				begin
@@ -34,7 +34,7 @@ begin
 				end
 			else
 				begin
-					RAISERROR('Limite de cartão insuficiente para realizar essa transação!', 16, 1)
+					RAISERROR('Limite de cartÃ£o insuficiente para realizar essa transaÃ§Ã£o!', 16, 1)
 				end
 		end
 	else
@@ -141,23 +141,16 @@ begin
 end
 
 
---Ações para as triggers
+--AÃ§Ãµes para as triggers
 
 insert into [transaction] 
 values(1, GETDATE(), 'Boleto', 'Pagamento conta energia', 200, 'D') 
 
 insert into [transaction] 
-values(2, GETDATE(), 'TED', 'Venciemnto prestação de serviço', 200, 'C')
+values(2, GETDATE(), 'TED', 'Venciemnto prestaÃ§Ã£o de serviÃ§o', 200, 'C')
 
 insert into [transaction] 
-values(4, GETDATE(), 'Depósito', 'Recebimento', 200, 'C')
+values(4, GETDATE(), 'DepÃ³sito', 'Recebimento', 200, 'C')
 
 insert into [transaction]
-values(1, GETDATE(), 'Cartão de Crédito', 'Compra', 800, 'D')
-
-
-select * from bank_account
-
-select * from [transaction]
-
-select * from actions_log
+values(1, GETDATE(), 'CartÃ£o de CrÃ©dito', 'Compra', 800, 'D')
