@@ -14,7 +14,7 @@
 ### Modelo Físico:
 Ferramenta utilizada: https://dbdiagram.io/<br>
 Arquivo fonte: [Modelo Físico](https://dbdiagram.io/d/Copy-of-Copy-of-C7BankProject-655d41863be149578777da7a)<br>
-<img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/8bfc40f1-8849-420d-ae70-2c25f4084348" />
+<img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/a53ffe0d-3061-4efa-a80f-efb8c925a87d" />
 
 ### Dicionário de Dados:
 As informações sobre as tabelas e índices foram documentados na planilha [Dicionário de dados](https://docs.google.com/spreadsheets/d/1jE8zE5gjPB6n3X6Wvn8nbhCWUKokrW3Oqiy8snYbJhU/edit?usp=sharing).
