@@ -22,14 +22,13 @@ As informações sobre as tabelas e índices foram documentados na planilha [Dic
 ### Scripts SQL:
 Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 
-<ul>
-  <li>DDL [script-DDL](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/scripts-banco/script-DDL.sql)</li>
-  <li>Índices e Perguntas de Negócio [indices-e-queries](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/QueriesAndIndices.md)</li>
-  <li>DML script-DML</li>
-  <li>Triggers triggers</li>
-  <li>Stored Proceadures stored-proceadures</li>
-  <li>Functions functions</li>
-</ul>
+- DDL [script-DDL](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/scripts-banco/script-DDL.sql)
+- Índices e Perguntas de Negócio [indices-e-queries](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/QueriesAndIndices.md)
+- DML script-DML
+- Triggers triggers
+- Stored Proceadures stored-proceadures
+- Functions functions
+
 
 ### Código do sistema:
 Linguagem de Programação Java com SpringBoot<br>
