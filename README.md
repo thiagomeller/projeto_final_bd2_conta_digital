@@ -25,7 +25,7 @@ Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 - DDL [script-DDL](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/scripts-banco/script-DDL.sql)
 - Índices e Perguntas de Negócio [indices-e-queries](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/QueriesAndIndices.md)
 - DML script-DML
-- Triggers triggers
+- Triggers [triggers.sql](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/25c549a8afdb62ec2a678447b6b32064371f53ff/triggers.sql)
 - Stored Proceadures stored-proceadures
 - Functions functions
 
