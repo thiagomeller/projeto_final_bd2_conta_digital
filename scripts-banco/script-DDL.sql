@@ -84,9 +84,9 @@ GO
 
 CREATE TABLE [actions_log] (
     id INT NOT NULL IDENTITY (1, 1),
-    user_id INT NOT NULL,
+    user_id VARCHAR(100) NOT NULL,
     action_date DATETIME NOT NULL,
     table_name VARCHAR(100) NOT NULL,
-    description VARCHAR(max) NOT NULL,
+    description VARCHAR(max) NULL,
     PRIMARY KEY (id)
 );
