@@ -12,24 +12,25 @@
 - Ana [@Santinoni15](https://github.com/Santinoni15)
 
 ### Modelo Físico:
-Utilizado https://dbdiagram.io/<br>
-Arquivo fonte: <code>https://dbdiagram.io/d/Copy-of-Copy-of-C7BankProject-655d41863be149578777da7a</code><br>
+Ferramenta utilizada: https://dbdiagram.io/<br>
+Arquivo fonte: [Modelo Físico](https://dbdiagram.io/d/Copy-of-Copy-of-C7BankProject-655d41863be149578777da7a)<br>
 <img src="https://github.com/thiagomeller/projeto_final_bd2_conta_digital/assets/42391994/8bfc40f1-8849-420d-ae70-2c25f4084348" />
 
 ### Dicionário de Dados:
 As informações sobre as tabelas e índices foram documentados na planilha [Dicionário de dados](https://docs.google.com/spreadsheets/d/1jE8zE5gjPB6n3X6Wvn8nbhCWUKokrW3Oqiy8snYbJhU/edit?usp=sharing).
 
-### Scripts DDL Criação do Database:
+### Scripts SQL:
 Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
-<code>1 arquivo SQL por objeto</code>
 
-### Scripts Popula tabelas:
-Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
-<code>1 arquivo SQL por objeto</code>
+<ul>
+  <li>DDL [script-DDL](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/scripts-banco/script-DDL.sql)</li>
+  <li>Índices e Perguntas de Negócio [indices-e-queries](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/QueriesAndIndices.md)</li>
+  <li>DML script-DML</li>
+  <li>Triggers triggers</li>
+  <li>Stored Proceadures stored-proceadures</li>
+  <li>Functions functions</li>
+</ul>
 
-### Objetos de BD (stored procedure, triggers e functions):
-<code>1 arquivo SQL por objeto</code>
-  
 ### Código do sistema:
 Linguagem de Programação Java com SpringBoot<br>
 <code>código fonte da aplicação</code>
