@@ -1,5 +1,5 @@
 --- Inserção de dados na tabela 'person'
-insert into person
+insert into [person] (cnpj, institution_name)
 values('55.736.492/0001-70', 'JackDonalds'),
 ('69.540.060/0001-01', 'SaSaddy'),
 ('02.293.270/0001-63', 'ApartamentosSP'),
@@ -12,18 +12,18 @@ values('55.736.492/0001-70', 'JackDonalds'),
 ('65.453.784/0001-59', 'AcabouACriatividade')
 
 --- Inserção de dados na tabela 'user'
-INSERT INTO [user] (person_id, username)
-VALUES(1, 'JD'),
-(1, 'JD2'),
-(2, 'SS'),
-(3, 'ASP'),
-(4, 'PJC'),
-(5, 'PQ'),
-(6, 'KK'),
-(7, 'FNAF'),
-(8, 'UH'),
-(9, 'GR'),
-(10, 'AAC')
+INSERT INTO [user] (person_id, username, created_at)
+VALUES(1, 'JD', GETDATE()),
+(1, 'JD2', GETDATE()),
+(2, 'SS', GETDATE()),
+(3, 'ASP', GETDATE()),
+(4, 'PJC', GETDATE()),
+(5, 'PQ', GETDATE()),
+(6, 'KK', GETDATE()),
+(7, 'FNAF', GETDATE()),
+(8, 'UH', GETDATE()),
+(9, 'GR', GETDATE()),
+(10, 'AAC', GETDATE())
 
 --- Inserção de dados na tabela 'transaction'
 INSERT INTO [transaction] (user_id, created_at, type, description, value, balance_change_type)
