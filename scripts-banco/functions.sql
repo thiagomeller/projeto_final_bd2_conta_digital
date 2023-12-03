@@ -59,3 +59,15 @@ BEGIN
 
     RETURN @totalLoanAmount;
 END;
+
+
+--- Função para pegar o total de transações de crédito: ---
+create function get_credits_sum(@id int) returns int as
+begin
+	declare @result int;
+
+	select @result = count(user_id) from [transaction] 
+	where balance_change_type like 'C' and user_id = @id
+
+	return @result
+end
