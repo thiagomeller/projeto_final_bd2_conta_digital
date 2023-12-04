@@ -3,28 +3,23 @@ import { Component, OnInit } from '@angular/core';
 import { catchError, retry, throwError } from 'rxjs';
 import { CreditCard } from '../models/credit-card';
 import { GetCreditCardService } from '../services/get-credit-card.service';
+import { error } from 'console';
 
 @Component({
   selector: 'app-get-credit-card',
   standalone: true,
   imports: [HttpClientModule],
-  templateUrl: './get-credit-card.component.html',
-  styleUrl: './get-credit-card.component.css'
+  templateUrl: './get-credit-card.page.html',
+  styleUrl: './get-credit-card.page.css'
 })
-export class GetCreditCardComponent implements OnInit{
-  
-  data = {} as CreditCard
+export class GetCreditCardComponent{
 
-  constructor(private cardService: GetCreditCardService){}
+  newdata: any;
+  constructor(private dataCard: GetCreditCardService){}
 
   ngOnInit(){
-    this.getData;
-  }
-
-
-  getData() {
-    this.cardService.getData().subscribe((card: any) => {
-      this.data = card;
-    });
+    this.dataCard.getData().subscribe(res =>{
+      this.newdata=res;
+    })
   }
 }

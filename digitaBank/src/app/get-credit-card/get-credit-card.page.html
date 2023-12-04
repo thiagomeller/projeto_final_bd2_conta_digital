@@ -1,0 +1,35 @@
+<div class="flex flex-col items-center justify-center h-screen bg-blue-500">
+    <div class="bg-white shadow rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-center">Cartão</h2>
+      <form class="mt-4">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">ID Usuário</label>
+            <p>{{newdata.userId}}</p>
+          </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">Nome no Cartão</label>
+          <p>{{newdata.cardHolder}}</p>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">Número do cartão</label>
+          {{newdata.cardNumber}}
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">CVV</label>
+            {{newdata.cardCvv}}
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">Data de Validade</label>
+          {{newdata.cardValidationDate}}
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">Data de Cadastro</label>
+          {{newdata.cardMemberSince}}
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2">Tipo de Cartão</label>
+          {{newdata.cardType}}
+        </div>
+      </form>
+    </div>
+</div>

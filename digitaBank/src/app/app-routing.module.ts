@@ -11,5 +11,5 @@ import { GetRoutingModule } from './get-credit-card/get-routing.module';
 export const routes: Routes = [
   { path: '', pathMatch: 'full', loadChildren: ()=> LoginRoutingModule},
   { path: 'credit-card', pathMatch: 'full', loadChildren: ()=> CreditCardRoutingModule},
-  { path: 'get-credit-card', pathMatch: 'full', loadChildren: ()=> GetRoutingModule}
+  { path: 'get', pathMatch: 'full', loadChildren: ()=> GetRoutingModule}
 ];

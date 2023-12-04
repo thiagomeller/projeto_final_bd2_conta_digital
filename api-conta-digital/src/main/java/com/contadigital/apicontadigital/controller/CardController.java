@@ -23,6 +23,7 @@ public class CardController {
     @Autowired
     private UserRepository userRepository;
 
+    @CrossOrigin
     @PostMapping(path = "create-card")
     public ResponseEntity createCard(@RequestBody CardDto cardDto) {
         Optional<User> userOptional = userRepository.findById(cardDto.getUserId());
