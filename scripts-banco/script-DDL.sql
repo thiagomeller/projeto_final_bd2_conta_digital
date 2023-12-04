@@ -90,7 +90,7 @@ CREATE TABLE [actions_log] (
     user_id INT NOT NULL,
     action_date DATETIME NOT NULL,
     table_name VARCHAR(100) NOT NULL,
-    description VARCHAR(150) NOT NULL,
+    description VARCHAR(150) NULL,
     PRIMARY KEY (id),
 );
 GO
