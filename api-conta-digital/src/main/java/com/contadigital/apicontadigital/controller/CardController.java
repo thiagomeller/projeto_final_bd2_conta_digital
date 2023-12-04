@@ -42,6 +42,7 @@ public class CardController {
         return ResponseEntity.ok().build();
     }
 
+    @CrossOrigin
     @GetMapping(path = "{idCard}")
     public ResponseEntity<CardDto> getCardById(@PathVariable("idCard") Long idCard) {
         Optional<Card> cardOptional = cardRepository.findById(idCard);
@@ -64,5 +65,34 @@ public class CardController {
     @GetMapping(path = "user/{idUser}")
     public List<Card> getCardsByUserId(@PathVariable("idUser") Long idUser) {
         return cardRepository.getCardsByUserId(idUser);
+    }
+
+    @CrossOrigin
+    @DeleteMapping(path = "delete-card/{idCard}")
+    public ResponseEntity deleteCard(@PathVariable("idCard") Long idCard) {
+        Optional<Card> cardOptional = cardRepository.findById(idCard);
+        if (cardOptional.isEmpty()) {
+            throw new ValidationException("Card not found");
+        }
+        cardRepository.delete(cardOptional.get());
+        return ResponseEntity.ok().build();
+    }
+
+    @CrossOrigin
+    @PutMapping(path = "update-card/{idCard}")
+    public ResponseEntity updateCard(@PathVariable("idCard") Long idCard, @RequestBody CardDto cardDto) {
+        Optional<Card> cardOptional = cardRepository.findById(idCard);
+        if (cardOptional.isEmpty()) {
+            throw new ValidationException("Card not found");
+        }
+        Card card = cardOptional.get();
+        card.setCardCvv(cardDto.getCardCvv());
+        card.setCardHolder(cardDto.getCardHolder());
+        card.setCardNumber(cardDto.getCardNumber());
+        card.setCardType(cardDto.getCardType());
+        card.setCardMemberSince(cardDto.getCardMemberSince());
+        card.setCardValidationDate(cardDto.getCardValidationDate());
+        cardRepository.save(card);
+        return ResponseEntity.ok().build();
     }
 }

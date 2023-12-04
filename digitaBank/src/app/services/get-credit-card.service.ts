@@ -10,12 +10,19 @@ export class GetCreditCardService {
 
   constructor(private http: HttpClient) {}
 
-
-  getData(){
-    return this.http.get('http://localhost:8080/api/card/1002')
+  getData(id: number): Observable<CreditCard>{
+    return this.http.get<CreditCard>('http://localhost:8080/api/card/' + id);
   }
 
   createCard(card: CreditCard): Observable<CreditCard>{
     return this.http.post<CreditCard>('http://localhost:8080/api/card/create-card', card);
+  }
+
+  deleteCard(id: number): Observable<CreditCard>{
+    return this.http.delete<CreditCard>('http://localhost:8080/api/card/delete-card/' + id);
+  }
+
+  updateCard(id: number, card: CreditCard): Observable<CreditCard>{
+    return this.http.put<CreditCard>('http://localhost:8080/api/card/update-card/' + id, card);
   }
 }

@@ -1,0 +1,40 @@
+<div class="flex flex-col items-center justify-center h-screen bg-blue-500">  
+    <div class="bg-white shadow rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-center">Atualizar Cartão</h2>
+        <form [formGroup]="cardForm" (ngSubmit)="updateData()">
+          <div>
+            <label class="block text-gray-700 text-sm font-bold mb-2">Cartão ID</label>
+            <input formControlName="id" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="ID">
+          </div>
+          <div>
+            <label class="block text-gray-700 text-sm font-bold mb-2">User id</label>
+            <input formControlName="userId" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="ID">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Nome</label>
+            <input formControlName="cardHolder" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="Nome">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Número do cartão</label>
+            <input formControlName="cardNumber" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="Nº do Cartão">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">CVV</label>
+            <input formControlName="cardCvv" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="CVV">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Data de Validade</label>
+            <input formControlName="cardValidationDate" type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="Data">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Data de Cadastro</label>
+            <input formControlName="cardMemberSince" type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="Data">
+          </div>
+          <div>
+            <label class="block text-gray-700 text-sm font-bold mb-2">Tipo de Cartão</label>
+            <input formControlName="cardType" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" placeholder="Tipo de Cartão">
+          </div>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none">Submit</button>
+        </form>
+      </div>
+  </div>
