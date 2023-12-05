@@ -6,10 +6,10 @@
 - Filipe Milaneze [@phillCD](https://github.com/phillCD)
 - Iuri de Lima Marques [@iurilimamarques](https://github.com/iurilimamarques)
 - Thiago Meller [@thiagomeller](https://github.com/thiagomeller)
-- Janaina [@janainacarlos](https://github.com/janainacarlos)
-- Monique [@moniquepavan](https://github.com/moniquepavan)
-- Gabriel [@gabrieldorodrigues](https://github.com/gabrieldorodrigues)
-- Ana [@Santinoni15](https://github.com/Santinoni15)
+- Janaina Carlos João [@janainacarlos](https://github.com/janainacarlos)
+- Monique Cardoso Pavan [@moniquepavan](https://github.com/moniquepavan)
+- Gabriel de Oliveira Rodrigues [@gabrieldorodrigues](https://github.com/gabrieldorodrigues)
+- Ana Júlia Santinoni [@Santinoni15](https://github.com/Santinoni15)
 
 ### Modelo Físico:
 Ferramenta utilizada: https://dbdiagram.io/<br>
