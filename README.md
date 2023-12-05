@@ -29,6 +29,9 @@ Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 - Stored Proceadures [stored-proceadures](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/scripts-banco/procedures.sql)
 - Functions [functions](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/blob/main/scripts-banco/functions.sql)
 
+### Portfólio do Projeto:
+[Apresentação](https://docs.google.com/presentation/d/1X5pGDUIbZTLOQjB6WScgS34edEHFvU5-2IZItTVBpWQ/edit#slide=id.g2a24af097bd_0_7)
+
 
 ### Código do sistema:
 - Linguagem de Programação Java com SpringBoot [back-end](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/tree/main/api-conta-digital)
