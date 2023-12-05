@@ -31,8 +31,8 @@ Banco de dados utilizado SQL Server versão 2022 - Azure.<br>
 
 
 ### Código do sistema:
-Linguagem de Programação Java com SpringBoot<br>
-<code>código fonte da aplicação</code>
+- Linguagem de Programação Java com SpringBoot [back-end](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/tree/main/api-conta-digital)
+- Linguagem de Programação Angular com Tailwind [front-end](https://github.com/thiagomeller/projeto_final_bd2_conta_digital/tree/main/digitaBank)
 
 ### Relatório Final
 O relatório final está disponível no arquivo [PDF Conta Digital](https://docs.google.com/document/d/1fqPJ_jK8oAi5Old4UvQNoTG6srlBxPFVQA4wORVLhqI/edit).
